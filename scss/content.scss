@@ -1,0 +1,165 @@
+#main_left {
+
+	#content_image {
+		width: calc(100% - 120px);
+		padding: 0 60px 10px 60px;
+		position: relative;
+
+		a {
+			display: inline-block;
+			width: 100%;
+
+			img {
+				width: 100%;
+			}
+
+			&:hover {
+				opacity: 1.25;
+			}
+		}
+
+		.favorite_button {
+			width: 24px;
+			height: 24px;
+			border-radius: 12px;
+			background-color: white;
+			position: absolute;
+			top: 10px;
+			left: 70px;
+
+			img {
+				position: absolute;
+				top: 4px;
+				left: 4px;
+			}
+		}
+	}
+
+	#content_title {
+		width: calc(100% - 120px);
+		padding: 0 60px 10px 60px;
+		font-size: 25px;
+	}
+
+	#content_discription {
+		width: calc(70% - 70px);
+		padding: 0 10px 10px 60px;
+		float: left;
+
+		p {
+			width: 100%;
+			font-size: 18px;
+			overflow-wrap: break-word;
+		}
+	}
+
+	#content_information {
+		width: calc(30% - 70px);
+		padding: 0 60px 10px 10px;
+		float: right;
+
+		#content_type {
+			font-size: 11px;
+			text-align: center;
+			background-color: cyan;
+			border-radius: 5px;
+		}
+
+		#content_author {
+			clear: both;
+			text-align: right;
+			a {
+				color: #88f;
+			}
+		}
+
+		#content_price {
+			text-align: right;
+		}
+
+		#content_sales_day {
+			text-align: right;
+		}
+
+		#content_sales_amount {
+			text-align: right;
+		}
+
+		#content_cart_in {
+			width: 100%;
+
+			a {
+				width: 100%;
+				height: 30px;
+				text-align: center;
+				background-color: #fd7;
+				display: inline-block;
+				border-radius: 8px;
+				font-size: 17px;
+				border: #888 solid 1px;
+				img {
+					height: 20px;
+					vertical-align: middle;
+					height: 15px;
+				}
+			}
+		}
+
+		#content_buy_soon {
+			width: 100%;
+
+			a {
+				width: 100%;
+				height: 30px;
+				text-align: center;
+				background-color: #fb6;
+				display: inline-block;
+				border-radius: 8px;
+				font-size: 17px;
+				border: #888 solid 1px;
+			}
+		}
+	}
+
+	#other_contents {
+		clear: both;
+		width: calc(100% - 120px);
+		padding: 0 60px 10px 60px;
+		display: flex;
+		flex-wrap: wrap;
+
+		h4, hr {
+			width: 100%;
+		}
+
+		.others {
+			width: calc(25% - 10px);
+			margin: 0 5px;
+			line-height: 12px;
+			background-color: white;
+			a {
+				width: 100%;
+				img {
+					width: 100%;
+				}
+			}
+			.other_title {
+				font-size: 12px;
+			}
+			.other_type {
+				display: inline-block;
+				width: 100%;
+				font-size: 10px;
+				text-align: right;
+			}
+		}
+
+		#check_more {
+			display: inline-block;
+			width: 100%;
+			text-align: right;
+			font-size: 12px;
+			color: #88f;
+		}
+	}
+}

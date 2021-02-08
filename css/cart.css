@@ -1,0 +1,219 @@
+h4, hr {
+  margin: 0 60px;
+}
+
+#contents {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#contents .content {
+  width: calc(50% - 70px);
+}
+#contents .content:nth-of-type(2n+1) {
+  padding: 0 10px 10px 60px;
+}
+#contents .content:nth-of-type(2n) {
+  padding: 0 60px 10px 10px;
+}
+#contents .content .content_image {
+  width: calc(100% - 10px);
+  padding: 5px 5px 0 5px;
+  position: relative;
+}
+#contents .content .content_image a {
+  display: inline-block;
+  width: 100%;
+}
+#contents .content .content_image a img {
+  width: 100%;
+}
+#contents .content .content_image .favorite_button {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 10px;
+  left: 10px;
+  border-radius: 12px;
+  border: black solid 1px;
+  background-color: white;
+}
+#contents .content .content_image .favorite_button img {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+}
+#contents .content .content_image .select_button {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 10px;
+  right: 10px;
+  border-radius: 12px;
+  border: black solid 1px;
+  background-color: white;
+}
+#contents .content .content_image .select_button.selected {
+  background-color: #9c0;
+}
+#contents .content .content_image .select_button.selected::before {
+  content: '';
+  background-color: white;
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 4px;
+  top: 12px;
+  left: 3px;
+  transform: rotate(45deg);
+}
+#contents .content .content_image .select_button.selected::after {
+  content: '';
+  background-color: white;
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 4px;
+  top: 11px;
+  left: 8px;
+  transform: rotate(-53deg);
+}
+#contents .content .content_information {
+  width: calc(100% - 10px);
+  padding: 0 5px 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#contents .content .content_information .content_type {
+  width: 100%;
+  font-size: 11px;
+  text-align: center;
+  background-color: cyan;
+  border-radius: 5px;
+}
+#contents .content .content_information .content_name {
+  width: calc(70% - 10px);
+  padding: 0 5px;
+  font-size: 15px;
+  border-bottom: black solid 1px;
+}
+#contents .content .content_information .author_name {
+  width: calc(30% - 10px);
+  padding: 0 5px;
+  font-size: 13px;
+  text-align: center;
+  border-bottom: black solid 1px;
+}
+#contents .content .content_information .author_name a {
+  color: #88f;
+}
+#contents .content .content_information .cart_amount {
+  width: 50%;
+  text-align: center;
+}
+#contents .content .content_information .cart_amount input {
+  width: 40px;
+}
+#contents .content .content_information .cart_amount button {
+  width: 15px;
+}
+#contents .content .content_information .cart_amount .amount_update {
+  width: 35px;
+}
+#contents .content .content_information .content_price {
+  width: 50%;
+  text-align: center;
+}
+#contents .cart_empty {
+  width: calc(100% - 120px);
+  height: 100px;
+  line-height: 100px;
+  padding: 0 60px 10px 60px;
+  text-align: center;
+}
+
+#buy {
+  width: calc(100% - 120px);
+  padding: 0 60px 10px 60px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#buy a {
+  display: inline-block;
+  width: calc(50% - 30px);
+  height: 40px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 40px;
+  border-radius: 10px;
+  margin: 0 15px;
+}
+#buy a#buy_all {
+  background-color: #fd7;
+}
+#buy a#buy_checked {
+  background-color: #fb6;
+}
+
+#confirm_buy {
+  top: 100px;
+  left: 250px;
+  width: 490px;
+  background-color: #fdf;
+  border: black solid 1px;
+  position: fixed;
+  border-radius: 10px;
+  padding: 10px;
+}
+#confirm_buy .confirm_text {
+  font-size: 18px;
+}
+#confirm_buy .confirm_row {
+  display: flex;
+  flex-wrap: wrap;
+}
+#confirm_buy .confirm_row .confirm_title {
+  text-align: center;
+  display: inline-block;
+  width: 90%;
+}
+#confirm_buy .confirm_row .confirm_amount {
+  display: inline-block;
+  font-size: 13px;
+  width: 10%;
+}
+#confirm_buy .confirm_row .confirm_price {
+  text-align: right;
+  display: inline-block;
+  width: 100%;
+  color: #f60;
+}
+#confirm_buy .confirm_sum_price {
+  text-align: right;
+}
+#confirm_buy .confirm_ok {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  margin-top: 10px;
+}
+#confirm_buy .confirm_ok a {
+  display: inline-block;
+  width: 60%;
+  background-color: #0df;
+  border-radius: 8px;
+}
+#confirm_buy .confirm_ng {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  margin-top: 10px;
+}
+#confirm_buy .confirm_ng a {
+  display: inline-block;
+  width: 60%;
+  background-color: #0df;
+  border-radius: 8px;
+}
+
+/*# sourceMappingURL=cart.css.map */

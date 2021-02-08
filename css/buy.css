@@ -1,0 +1,60 @@
+.buy_text {
+  width: calc(100% - 120px);
+  padding: 0 60px 10px 60px;
+}
+
+.buy_row {
+  width: calc(100% - 120px);
+  padding: 0 60px 10px 60px;
+}
+.buy_row span.buy_title {
+  display: inline-block;
+  width: 90%;
+  text-align: center;
+  background-color: #ddd;
+}
+.buy_row span.buy_amount {
+  display: inline-block;
+  width: 10%;
+  text-align: left;
+  background-color: #ddd;
+}
+.buy_row span.buy_price {
+  text-align: right;
+  display: inline-block;
+  width: 100%;
+  color: #f60;
+  background-color: #ddd;
+}
+
+.buy_sum {
+  text-align: right;
+}
+
+.buy_ok {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  margin-top: 10px;
+}
+.buy_ok a {
+  display: inline-block;
+  width: 60%;
+  background-color: #0df;
+  border-radius: 8px;
+}
+
+.buy_ng {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  margin-top: 10px;
+}
+.buy_ng a {
+  display: inline-block;
+  width: 60%;
+  background-color: #0df;
+  border-radius: 8px;
+}
+
+/*# sourceMappingURL=buy.css.map */
